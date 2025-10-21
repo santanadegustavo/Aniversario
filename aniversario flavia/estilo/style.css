@@ -1,0 +1,307 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+
+:root{
+        --Fonte1: Verdana, Geneva, Tahoma, sans-serif;
+        --Fonte2: 'Passion One', cursive;
+        --Fonte3: 'Sriracha', cursive;
+    }
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #f3d4f6;
+    /* cursor - ponteiro do mouse */
+    cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><text y="24" font-size="24">💖</text></svg>') 16 16, auto;
+    /* cursor de cima serve para deixar o ponteiro em foramto de coração, busquei a url na internet e coloqei emoji */
+
+}
+
+header{
+    background-color: lightcoral;
+
+    height: 250px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+ header  h1{
+    color: crimson;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.664);
+
+    font-style: italic;
+    font-variant: small-caps;
+    
+    margin-bottom: 10px;
+    font-size: 3.5em;
+}
+
+header p{
+    color: white;
+
+    /* height: 20px; */
+    width: 500px;
+
+    font-family: cursive;
+    font-style: italic;
+    
+    text-shadow: 2px 2px 4px #00000048;
+    text-transform: uppercase;
+
+    margin-top: 10px;
+}
+
+header > div{
+    margin: 20px;
+    padding: 20px;
+    
+}
+
+ ul{
+    list-style: none;
+     margin-top: 10px;
+}
+ul li{ /* aqui é onde eu mexo dentro da lista que irei colocar o link */
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+
+    background-color: crimson;
+
+    box-shadow: 2px 2px 5px #00000048;
+
+    border-radius: 10px;
+}
+
+ul li a{ /* aqui é onde eu mexo dentro do link */
+   
+    text-decoration: none;
+    color: lightcoral;
+
+    font-size: 1.2em;
+    font-weight: bold;
+
+    transition-duration: 0.8s;
+    
+    /* cursor: ;
+    cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><text y="24" font-size="24">💖</text></svg>') 16 16, auto;
+    cursor de cima serve para deixar o ponteiro em foramto de coração, busquei a url na internet e coloqei emoji */
+}  
+
+ul li a:hover{ /* Aqui eu mexo no link quando passo o mouse por cima */
+    color: limegreen;
+    text-shadow: 2px 2px 5px #00000048;
+    transform: scale(1.2);
+    transition-duration: 0.8s;
+}
+
+main{
+    
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 1px 5px 5px #00000048;
+    border-radius: 30px; 
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+
+    max-width: 1500px;
+    width: 90%;
+
+    box-sizing: border-box;
+
+    /* Aqui eu centralizo o main todo no centro */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+main p{ /* Aqui eu mexo no parágrafo que está dentro do main */
+    font-size: 1.3em;
+    text-align: justify;
+    text-indent: 50px;
+
+    margin-bottom: 50px;
+    color: white;
+   
+}
+
+section{ /* Aqui eu mexo em todas as seções */
+    margin-bottom: 50px;
+    /* padding: 20px; */
+
+    /* aqui eu mexo com a largura e altura da section */
+    
+    height: 100%;
+
+    
+    border-radius: 10px;
+
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+    font-family: var(--Fonte3);
+    font-size: 1.5vw;
+}
+
+.text{
+    font-size: 1.2em;
+    text-align: justify;
+
+    color: gray;
+    background-color: crimson;
+
+    min-height: 110vh; 
+
+    background-color: crimson; /* ou #D62744 */
+    color: white; /* Cor do texto no bloco vermelho */
+    /* min-height: 600px; */
+    padding: 30px; /* Garante espaço interno */
+    box-sizing: border-box; /* Garante que o padding não aumente a largura total */
+
+    /* NOVO: Flexbox para alinhar o conteúdo interno (título, carrossel, texto) */
+    display: flex;
+    flex-direction: column; /* Empilha os itens (título, carrossel, texto) */
+    align-items: center; /* Centraliza tudo horizontalmente */
+    justify-content: center; /* Centraliza tudo verticalmente na caixa */
+}
+
+
+/*Estilo do Título Sentimental */
+.titulo-carrossel {
+    color: #FFC0CB; /* Um rosa claro para se destacar do vermelho */
+    font-size: 2em;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/*Contêiner do Carrossel (Onde o scroll acontece) */
+.carrossel-container {
+    width: 90%; /* Ocupa a maior parte da caixa vermelha */
+    max-width: 800px; /* Largura máxima para não ficar enorme em telas grandes */
+    height: 800px; /* Altura que você quer para o carrossel (ajuste) */
+    
+    /* Configuração para o Carrossel Horizontal */
+    display: flex;
+    overflow-x: scroll; /* ESSENCIAL: Permite o arraste/scroll horizontal */
+    scroll-snap-type: x mandatory; /* Deixa o scroll "parar" em cada foto */
+    
+    border: 5px solid white;
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra interna para profundidade */
+}
+
+/* Estilo das Imagens*/
+.carrossel-imagem {
+    /* Força a imagem a ocupar 100% da largura do contêiner a cada parada */
+    width: 100%; 
+    height: 100%;
+    
+    /* Garante que a imagem preencha o espaço sem deformar */
+    object-fit: cover; 
+    
+    /*para que o scroll pare em cada foto*/
+    flex-shrink: 0; 
+    scroll-snap-align: center; 
+}
+
+/*Estilo do Texto Sentimental Abaixo*/
+.texto-sentimental {
+    font-size: 1.3em;
+    margin-top: 25px;
+    text-align: center;
+    color: #FFD700; /* Dourado para destaque (opcional) */
+}
+
+section.container-image{ /* Classe para as seções com imagem de fundo */
+     min-height: 110vh; /* Altura mínima para garantir que a imagem ocupe a tela inteira */
+    /* height: 100vh; */  /* Altura da viewport (tela inteira) */
+
+    background-size: cover; /* Faz a imagem cobrir toda a seção */
+    background-repeat: no-repeat; 
+    background-position: center;    /* Centraliza a imagem no plano de fundo*/
+    background-attachment: fixed; /*Fixa o plano de fundo*/
+}
+
+
+section#img01{  /* ID para a primeira seção com imagem de fundo */
+    background-image: url(/imagens/imagem1.jpg);
+    background-position: center bottom;
+}
+
+
+section#img02{ /* ID para a segunda seção com imagem de fundo */
+    background-image: url(/imagens/imagem02.jpg);
+    background-position: center center;
+
+}
+
+section#img03{ /* ID para a terceira seção com imagem de fundo */
+    background-image: url(/imagens/img.JPG);
+    
+}
+
+.main-footer {
+    /* Cor de Fundo: Use o seu rosa suave (#fdf4f6) ou o vermelho (crimson) 
+       para fazer um contraste com a última seção. */
+    background-color: #D62744; /* Usando o seu vermelho crimson */
+    color: #FFFFFF; /* Texto branco */
+    text-align: center;
+    padding: 30px 20px; /* Espaçamento interno */
+    width: 100%;
+    
+    /* Garante que o rodapé fique abaixo do conteúdo Parallax */
+    position: relative; 
+    bottom: 0;
+}
+
+.footer-content {
+    /* Garante que o conteúdo fique centralizado e limitado pela sua largura máxima do main */
+    max-width: 1100px; /* Use o mesmo max-width do seu 'main' (se estiver usando) */
+    margin: 0 auto;
+}
+
+.footer-message {
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.footer-creator {
+    font-size: 0.85em;
+    opacity: 0.8;
+}
+
+.footer-heart {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    display: block; /* Para ficar sozinho em uma linha acima do texto */
+    
+    /* Efeito de pulse (opcional, requer CSS Keyframes, mas já funciona com um ícone) */
+    animation: heartbeat 1.5s infinite; 
+}
+
+/* Opcional: Animação de Coração Pulsando */
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+}
