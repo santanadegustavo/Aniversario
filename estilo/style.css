@@ -240,14 +240,15 @@ section.container-image{ /* Classe para as seções com imagem de fundo */
 
 
 section#img01{  /* ID para a primeira seção com imagem de fundo */
-    background-image: url(../imagens/imagem1.jpg);
+    background-image: url(../imagens/imagem1.JPG);
     background-position: center bottom;
 }
 
 
 section#img02{ /* ID para a segunda seção com imagem de fundo */
     background-image: url(../imagens/imagem02.JPG);
-    background-position: center center;
+    background-position:  center right;
+   
 
 }
 
