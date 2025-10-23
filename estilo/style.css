@@ -119,7 +119,7 @@ main{
     padding-left: 30px;
 
     max-width: 1500px;
-    width: 90%;
+    width: 75%;
 
     box-sizing: border-box;
 
@@ -229,32 +229,34 @@ section{ /* Aqui eu mexo em todas as seções */
 }
 
 section.container-image{ /* Classe para as seções com imagem de fundo */
-     min-height: 110vh; /* Altura mínima para garantir que a imagem ocupe a tela inteira */
-    /* height: 100vh; */  /* Altura da viewport (tela inteira) */
+     min-height: 110vh;  /*Altura mínima para garantir que a imagem ocupe a tela inteira */
+    height: 100vh;   /* Altura da viewport (tela inteira) */
 
-    background-size: cover; /* Faz a imagem cobrir toda a seção */
+    background-size: cover; /*Faz a imagem cobrir toda a seção  */
     background-repeat: no-repeat; 
-    background-position: center;    /* Centraliza a imagem no plano de fundo*/
+    background-position: center;   /* Centraliza a imagem no plano de fundo*/
     background-attachment: fixed; /*Fixa o plano de fundo*/
 }
 
 
 section#img01{  /* ID para a primeira seção com imagem de fundo */
-    background-image: url(../imagens/EXNM6869.JPG);
+    background-image: url(../imagens/fla1.JPG);
     background-position: center bottom;
+    background-size: 80% auto;
 }
 
 
 section#img02{ /* ID para a segunda seção com imagem de fundo */
-    background-image: url(../imagens/fla.jpeg);
-    background-position:  center right;
-   
+    background-image: url(../imagens/teste8.jpeg); 
+    background-position: center center;
+    background-size: 70% auto;
 
 }
 
 section#img03{ /* ID para a terceira seção com imagem de fundo */
-    background-image: url(..//imagens/);
-    
+    background-image: url(../imagens/teste9.jpeg);
+    background-position: center;
+    background-size: 72% auto;    
 }
 
 .main-footer {
