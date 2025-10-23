@@ -137,7 +137,7 @@ main p{ /* Aqui eu mexo no parágrafo que está dentro do main */
     text-indent: 50px;
 
     margin-bottom: 50px;
-    color: #e3b7d0;
+    color: #b67368;
    
 }
 
@@ -162,9 +162,10 @@ section{ /* Aqui eu mexo em todas as seções */
     text-align: justify;
     min-height: 110vh; 
 
-    background-color:  ; /* ou #D62744 */
+    background-color:  #e4b1ab; /* ou #D62744 */
     padding: 30px; /* Garante espaço interno */
     box-sizing: border-box; /* Garante que o padding não aumente a largura total */
+    border-radius: 25px;
 
     
     display: flex;
@@ -172,6 +173,7 @@ section{ /* Aqui eu mexo em todas as seções */
     align-items: center; /* Centraliza tudo horizontalmente */
     justify-content: center; /* Centraliza tudo verticalmente na caixa */
 }
+
 
 
 /*Estilo do Título Sentimental */
