@@ -22,7 +22,7 @@
 }
 
 body{
-    background-color: #f3d4f6;
+    background-color: #f2e5f5;
     /* cursor - ponteiro do mouse */
     cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><text y="24" font-size="24">💖</text></svg>') 16 16, auto;
     /* cursor de cima serve para deixar o ponteiro em foramto de coração, busquei a url na internet e coloqei emoji */
@@ -30,7 +30,8 @@ body{
 }
 
 header{
-    background-color: lightcoral;
+    /* background-color: lightcoral; */
+    background-color: #e4b1ab;
 
     height: 250px;
 
@@ -136,7 +137,7 @@ main p{ /* Aqui eu mexo no parágrafo que está dentro do main */
     text-indent: 50px;
 
     margin-bottom: 50px;
-    color: white;
+    color: #e3b7d0;
    
 }
 
@@ -146,10 +147,9 @@ section{ /* Aqui eu mexo em todas as seções */
 
     /* aqui eu mexo com a largura e altura da section */
     
-    height: 100%;
-
+    /* height: 100%; */
     
-    border-radius: 10px;
+    
 
     padding-top: 10vh;
     padding-bottom: 10vh;
@@ -162,19 +162,13 @@ section{ /* Aqui eu mexo em todas as seções */
 .text{
     font-size: 1.2em;
     text-align: justify;
-
-    color: gray;
-    background-color: crimson;
-
     min-height: 110vh; 
 
-    background-color: crimson; /* ou #D62744 */
-    color: white; /* Cor do texto no bloco vermelho */
-    /* min-height: 600px; */
+    background-color:  ; /* ou #D62744 */
     padding: 30px; /* Garante espaço interno */
     box-sizing: border-box; /* Garante que o padding não aumente a largura total */
 
-    /* NOVO: Flexbox para alinhar o conteúdo interno (título, carrossel, texto) */
+    
     display: flex;
     flex-direction: column; /* Empilha os itens (título, carrossel, texto) */
     align-items: center; /* Centraliza tudo horizontalmente */
@@ -192,18 +186,19 @@ section{ /* Aqui eu mexo em todas as seções */
 
 /*Contêiner do Carrossel (Onde o scroll acontece) */
 .carrossel-container {
-    width: 90%; /* Ocupa a maior parte da caixa vermelha */
-    max-width: 800px; /* Largura máxima para não ficar enorme em telas grandes */
-    height: 800px; /* Altura que você quer para o carrossel (ajuste) */
+    width: 100%; /* Ocupa a maior parte da caixa vermelha */
+    max-width: 900px; /* Largura máxima para não ficar enorme em telas grandes */
+    height: 900px; /* Altura que você quer para o carrossel (ajuste) */
     
     /* Configuração para o Carrossel Horizontal */
     display: flex;
     overflow-x: scroll; /* ESSENCIAL: Permite o arraste/scroll horizontal */
     scroll-snap-type: x mandatory; /* Deixa o scroll "parar" em cada foto */
     
-    border: 5px solid white;
+    border: 10px solid white;
     border-radius: 10px;
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra interna para profundidade */
+    /* box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); Sombra interna para profundidade */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra externa para destaque */
 }
 
 /* Estilo das Imagens*/
@@ -225,17 +220,19 @@ section{ /* Aqui eu mexo em todas as seções */
     font-size: 1.3em;
     margin-top: 25px;
     text-align: center;
-    color: #FFD700; /* Dourado para destaque (opcional) */
+    color: #FFC0CB; /* Dourado para destaque (opcional) */
 }
 
 section.container-image{ /* Classe para as seções com imagem de fundo */
-     min-height: 110vh;  /*Altura mínima para garantir que a imagem ocupe a tela inteira */
+    min-height: 110vh;  /*Altura mínima para garantir que a imagem ocupe a tela inteira */
     height: 100vh;   /* Altura da viewport (tela inteira) */
 
     background-size: cover; /*Faz a imagem cobrir toda a seção  */
     background-repeat: no-repeat; 
     background-position: center;   /* Centraliza a imagem no plano de fundo*/
     background-attachment: fixed; /*Fixa o plano de fundo*/
+
+    border-radius: 20px;
 }
 
 
@@ -247,14 +244,14 @@ section#img01{  /* ID para a primeira seção com imagem de fundo */
 
 
 section#img02{ /* ID para a segunda seção com imagem de fundo */
-    background-image: url(../imagens/teste8.jpeg); 
+    background-image: url(../imagens/fla2.jpeg); 
     background-position: center center;
     background-size: 70% auto;
 
 }
 
 section#img03{ /* ID para a terceira seção com imagem de fundo */
-    background-image: url(../imagens/teste9.jpeg);
+    background-image: url(../imagens/fla3.jpeg);
     background-position: center;
     background-size: 72% auto;    
 }
