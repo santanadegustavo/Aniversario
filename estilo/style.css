@@ -71,6 +71,10 @@ header > div{
     
 }
 
+nav{
+    margin-top: 30px;
+}
+
  ul{
     list-style: none;
      margin-top: 10px;
@@ -160,6 +164,14 @@ section{ /* Aqui eu mexo em todas as seções */
     flex-direction: column;
     align-items: center; 
     justify-content: center; 
+
+    text-align: center;
+}
+
+.t-final{
+    line-height: 2em;
+    font-size: 25px;
+    font-style: italic;
 }
 
 
@@ -290,3 +302,44 @@ section#img03{ /* ID para a terceira seção com imagem de fundo */
     transform: scale(1.15);
   }
 }
+
+/* === ESTILO DO RELÓGIO === */
+.relogio-container {
+  padding: 25px 30px;
+  text-align: center;
+  background: lightpink;
+  color: #b65559; 
+  border-radius: 16px;
+  box-shadow:
+    8px 8px 15px rgba(0, 0, 0, 0.1),
+    -8px -8px 15px rgba(255, 255, 255, 0.774);
+  margin: 40px auto;
+  width: fit-content;
+  transition: all 0.3s ease;
+}
+
+.relogio-container:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    10px 10px 20px rgba(0, 0, 0, 0.12),
+    -10px -10px 20px rgba(255, 255, 255, 0.61);
+}
+
+#relogio-data {
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #c86b6f;
+  margin-bottom: 5px;
+}
+
+#relogio-hora {
+  font-size: 3rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #d05b60;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+

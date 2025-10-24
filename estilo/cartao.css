@@ -8,7 +8,7 @@ body {
 
     cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><text y="24" font-size="24">💖</text></svg>') 16 16, auto;
   }
-  /*Criando conteudo docartao*/
+  
   .birthdayCard {
     position: relative;
     width: 250px;
@@ -36,7 +36,6 @@ body {
   /* .birthdayCard:hover .wrap-deco {
     display: none;
   } */
-  /**********/
 
   /* .birthdayCard:hover .wrap-decoTwo {
     display: none;
@@ -46,7 +45,6 @@ body {
   /* .birthdayCard:hover .plate {
     display: none;
   } */
-   /**********/
 
   /*Frente do cartao*/
   .cardFront {
@@ -58,11 +56,11 @@ body {
     transform-origin: left;
     box-shadow: inset 100px 20px 100px rgba(0,0,0,.13), 30px 0 50px rgba(0,0,0,0.1);
     transition: .4s;
+    
   }
   
   .happy, .toyou {
     position: relative;
-    font-family: didot;
     text-align: center;
     backface-visibility: hidden;
     font-size: 30px; 
@@ -78,7 +76,6 @@ body {
   
   .bday {
     position: relative;
-    font-family: arial;
     font-size: 30px;
     text-align: center;
     top:163px;
@@ -239,7 +236,6 @@ body {
   }
   
   p {
-    font-family: 'Brush Script MT';
     color: #333;
   }
   
@@ -248,8 +244,11 @@ body {
   }
 
   .message {
-    font-size: 14px;
-    text-transform: lowercase;
+    font-size: 13px;
+    font-variant: small-caps;
+    font-weight: bolder;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
 
   /*Estilizaçao do link flutuante*/
@@ -262,7 +261,6 @@ body {
     padding: 10px 15px;
     border-radius: 5px;
     text-decoration: none;
-    font-family: Arial, sans-serif;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s, box-shadow 0.3s;
   }
